@@ -1,24 +1,23 @@
-
-body{
+body {
     font-family: 'Droid Serif', serif;
     font-size: 14px;
     color: #2f2f2f;
     background-color: #f9f7f1;
 }
 
-nav{
+nav {
     padding: 3rem;
     display: flex;
     justify-content: center;
-    list-style:none;
+    list-style: none;
     gap: 5rem;
     font-size: 1.2rem;
-    
+
 }
 
 .nav-links {
     display: flex;
-    list-style:none;
+    list-style: none;
     gap: 5rem;
     font-size: 1.2rem;
     margin-top: none !important;
@@ -30,11 +29,11 @@ nav{
     font-weight: bold;
 }
 
-.nav-item{
+.nav-item {
     position: relative;
 }
 
-.active-nav{
+.active-nav {
     height: 3px;
     background: #385ae0;
     border-radius: 1rem;
@@ -46,18 +45,18 @@ nav{
 
 section {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 3rem;
     margin: auto;
     max-width: 60%;
     padding: 0rem;
 }
 
-.card{
+.card {
     background: grey;
     height: 15rem;
     border-radius: 1rem;
-    cursor: pointer;    
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,25 +80,24 @@ section {
 
 }
 
-.card.active{
-    grid-column: 1  / 6span;
+.card.active {
+    grid-column: 1 / 6span;
     grid-row: 1;
     order: 0;
     height: auto;
     font-size: 1rem;
 }
 
-.card.is.inactive{
+.card.is.inactive {
     grid-column: span 2;
 }
-
 
 .dropdown {
     float: left;
     overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
+}
+
+.dropdown .dropbtn {
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: bold;
@@ -109,39 +107,149 @@ section {
     background-color: inherit;
     margin: 0;
     font-family: 'Droid Serif', serif;
-  }
-  
-  
-  .dropdown-content {
+}
+
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;   
+    min-width: 160px;
     box-shadow: 0.7rem 0.7rem 0rem grey;
     z-index: 1;
     text-decoration: none;
     font-size: 1rem !important;
     text-decoration: none;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+}
 
-  .noMargin{
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.noMargin {
     margin: 0rem;
     text-align: left;
-  }
+}
+
+
+html {
+    scroll-behavior: initial;
+    overflow: hidden;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 85%;
+    border-left: 3px solid black;
+    padding: 25px;
+    margin: 0
+}
+
+h2 span {
+    display: block;
+}
+
+h3 {
+    font-size: 20px;
+    font-stretch: expanded;
+    color: black;
+    line-height: 100%;
+}
+
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+.container {
+    margin: auto;
+    max-width: 100%;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.col {
+    width: 50%;
+}
+
+#vertical {
+    height: 200vh;
+    width: 100vw;
+    padding-top: 0rem;
+    margin-left: 70rem;
+}
+
+.vertical__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.vertical__content .col_left {
+    height: 100%;
+    margin-right: 10rem;
+}
+
+.vertical__content .col.col_right {
+    width: 40%;
+}
+
+.vertical__item:not(:last-child) {
+    margin-bottom: 240px;
+}
+
+#horizontal {
+    padding: 100px 0;
+}
+
+.horizontal__content {
+    display: flex;
+}
+
+.horizontal__item {
+    border: 1px solid black;
+    padding: 200px 150px;
+
+}
+
+.horizontal__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.horizontal__num {
+    font-size: 80px;
+    font-weight: 900;
+    font-stretch: condensed;
+    color: black;
+}
