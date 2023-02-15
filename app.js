@@ -22,9 +22,7 @@ links.forEach(link => {
 })
 
 const cards = document.querySelectorAll('.card')
-console.log(cards)
 cards.forEach((card, index) => {
-
     card.addEventListener('click', () => {
         const state = Flip.getState(cards)
 

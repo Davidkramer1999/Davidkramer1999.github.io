@@ -21,7 +21,6 @@ link.forEach(el => {
         el.classList.add('active')
 
         const attr = el.getAttribute('language')
-        console.log(introduction);
         projects.textContent = data[attr].projects
         myStoryEN.textContent = data[attr].Mystory
         language.textContent = data[attr].language
