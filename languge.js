@@ -64,10 +64,7 @@ const data = {
         "language": "Jezik",
         "contactMe": "Kontakt",
         "Introduction": "O meni 🧑‍💻",
-        "introduction": `Moje ime je David Kramer in sem full stack spletni razvijalec iz Celja.
-          Razvil sem že kar nekaj spletnih strani. Večina je dokaj preprostih, saj je bil
-           namen poznavanje sintakse ter kako deluje framework. Večino
-            spletnih strani imam objavljenih na svojem GitHub profilu.`,
+        "introduction": `Moje ime je David Kramer in sem full stack razvijalec iz Celja. Za namen spoznavanja različnih frameworkov sem razvil nekaj preprostih spletni strani, ki so dostopna na mojem github profilu.`,
         "passionate": `Sem strasten pri kreiranju dobrih spletnih aplikacij. Veliko truda vložim v
          izgled ter uporabniško izkušnjo. Predvsem veliko konsistence manjka na veliko spletnih strani.`,
         "neverQuit": `In nikol ne obupam, dokler problem ni rešen!`,

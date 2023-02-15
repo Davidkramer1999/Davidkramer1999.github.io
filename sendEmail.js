@@ -1,13 +1,15 @@
 function sendEmail() {
+    console.log("aaaaaaaaa");
     var params = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value
     };
-    console.log(params);
     const serviceId = "service_slug3ud";
     const templateId = "template_96jre2g";
-
+    console.log("tiloooo");
+    console.log(document.getElementById("email").value);
+    if(document.getElementById("email").value.length > 0)    {
     emailjs
         .send(serviceId, templateId, params)
         .then((res) => {
@@ -17,5 +19,8 @@ function sendEmail() {
             console.log(res);
             alert("your message has been send");
         })
-        .catch(err => alert(err))
+        .catch(err => console.log(err))
+    }else{
+        alert("Please check again")
+    }
     }
