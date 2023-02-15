@@ -1,68 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenis - Smooth Scrolling Library</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <nav>
-        <ul class="nav-links">
-          <div class="nav-item">
-            <li><a href="index.html">My story</a></li>
-          </div>
-          <div class="nav-item">
-            <li><a  href="projects.html">Projects</a></li>
-            <div class="active-nav"></div>
-          </div>
-          <div class="nav-item">
-            <li><a href="#">Portfolio</a></li>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Language
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <div class="langWrap">
-              <a href="#" language="slovenian">SLO</a>
-              <a href="#" language='english' class="active">EN</a>
-            </div>
-            </div>
-          </div>
-        </ul>
-      </nav>
-    <section id="horizontal">
-        <div class="container">
-            <div class="horizontal__content">
-                <div class="horizontal__item">
-                    <div class="horizontal__num">1</div>
-                </div>
-                <div class="horizontal__item">
-                    <div class="horizontal__num">2</div>
-                </div>
-                <div class="horizontal__item">
-                    <div class="horizontal__num">3</div>
-                </div>
-                <div class="horizontal__item">
-                    <div class="horizontal__num">4</div>
-                </div>
-                <div class="horizontal__item">
-                    <div class="horizontal__num">5</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Flip.min.js"
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenis - Smooth Scrolling Library</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="nav-links">
+      <div class="nav-item">
+        <li><a href="index.html" class="Mystory">My story</a></li>
+      </div>
+      <div class="nav-item">
+        <li><a href="#" class="projects">Projects</a></li>
+        <div class="active-nav"></div>
+      </div>
+      <div class="nav-item">
+        <li><a href="#" class="contactMe">Contact me</a></li>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Language
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <div class="langWrap">
+            <a href="#" language="slovenian">SLO</a>
+            <a href="#" language='english' class="active">EN</a>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </nav>
+  <section id="horizontal">
+    <div class="container">
+      <div class="horizontal__content">
+        <div class="horizontal__item">
+          <div class="horizontal__num">
+            Make you reservation today!
+            <a href="https://master--magnificent-blancmange-e54e6e.netlify.app/">
+            <img
+            class="img"
+            src="./download.png"
+            ></img>
+          </a>
+          </div>
+        </div>
+        <div class="horizontal__item">
+          <div class="horizontal__num">
+           <p coming-soon="..."></p>Calculator coming soon </p>
+          </div>
+        </div>
+        <div class="horizontal__item">
+          <div class="horizontal__num">
+            <p coming-soon="..."></p>More to come! </p>
+          </div>
+        </div>
+        <div class="horizontal__item">
+          <div class="horizontal__num">
+            <p coming-soon="..."></p>More to come! </p>
+          </div>
+        </div>
+        <div class="horizontal__item">
+          <div class="horizontal__num">
+            <p coming-soon="..."></p>More to come! </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Flip.min.js"
     integrity="sha512-byzUdBXaTSrgrlWDvkyU6TBkRSUUiI3EzVIdZtrYEUx1hFnsel9QmEs3QWpKo+8N+G9eOjSxQzFWF1PLq0+WVw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./app.js"></script>
+  <script src="./app.js"></script>
+  <script src="./languge.js"></script>
 
 </body>
+
 </html>

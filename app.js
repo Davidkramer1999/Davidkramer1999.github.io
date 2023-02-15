@@ -1,5 +1,5 @@
 
-gsap.registerPlugin(Flip);
+gsap.registerPlugin(Flip,ScrollTrigger);
 
 const links = document.querySelectorAll(".nav-item a")
 const activeNav = document.querySelector(".active-nav")

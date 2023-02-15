@@ -204,7 +204,7 @@ section {
 
 #vertical {
     height: 200vh;
-    width: 100vw;
+    width: 100%;
     padding-top: 0rem;
     margin-left: 70rem;
 }
@@ -230,7 +230,7 @@ section {
 }
 
 #horizontal {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .horizontal__content {
@@ -239,17 +239,46 @@ section {
 
 .horizontal__item {
     border: 1px solid black;
-    padding: 200px 150px;
+    padding: 150px 100px;
+    width: 100%;
 
 }
 
 .horizontal__item:not(:last-child) {
     margin-right: 50px;
+    width: 100%;
 }
 
 .horizontal__num {
-    font-size: 80px;
+    font-size: 20px;
     font-weight: 900;
+    text-align: center;
     font-stretch: condensed;
     color: black;
+}
+
+.img{
+    padding: 0px;
+    height: auto;
+}
+
+p:before{
+   content: attr(coming-soon); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #252525;
+    overflow: hidden;
+    animation: animate 10s linear infinite
+}
+@keyframes animate {
+    0%
+    {
+        width: 0;
+    }
+    100%
+    {
+        width: 100%;
+    }
 }
