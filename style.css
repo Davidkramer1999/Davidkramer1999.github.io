@@ -242,6 +242,7 @@ section {
     border: 4px solid grey;
     padding: 150px 100px;
     width: 100%;
+    max-width: fit-content;
 
 }
 
@@ -282,4 +283,11 @@ p:before{
     {
         width: 100%;
     }
+}
+
+.CalculatorImg{
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 220px;
 }
