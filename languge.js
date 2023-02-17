@@ -34,7 +34,6 @@ Language.link.forEach(el => {
         Language.langEl.querySelector('.active').classList.remove('.active')
         el.classList.add('active')
         const attr = el.getAttribute('language')
-        console.log(document.querySelector('.title.connectWithMeE'),);
         //prevent crashing language 
         const removeNullValues = (obj) => {
             Object.keys(obj).forEach(key => {
