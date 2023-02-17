@@ -481,3 +481,12 @@ textarea.input {
   input:focus::placeholder {
     color: transparent;
   }
+
+  .fa-envelope:before {
+    padding-right:5px
+  }
+
+  .fa-phone:before {
+    padding-right:5px
+  }
+  
