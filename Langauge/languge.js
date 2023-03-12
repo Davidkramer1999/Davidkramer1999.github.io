@@ -26,6 +26,7 @@ const Language = {
     connectWithMeE: document.querySelector('.title.contanctMe'),
     getInTouch: document.querySelector('.title.getInTouch'),
     btnSend: document.querySelector('.btn.send'),
+    weatherApp: document.querySelector('.weatherApp'),
 }
 
 
@@ -70,6 +71,7 @@ Language.link.forEach(el => {
         Language.email.textContent = data[attr].email
         Language.getInTouch.textContent = data[attr].getInTouch
         Language.btnSend.textContent = data[attr].btnSend
+        Language.weatherApp.textContent = data[attr].weatherApp
     })
 })
 
@@ -104,6 +106,7 @@ const data = {
         "message": `Message`,
         "getInTouch": `Let's get in touch`,
         "btnSend": `Send`,
+        "weatherApp": `Check weather in US cities`,
     },
     "slovenian": {
         "Mystory": "Moja zgodba",
@@ -140,5 +143,6 @@ const data = {
         "message": `Sporočilo`,
         "getInTouch": `Kontakt`,
         "btnSend": `Pošlji`,
+        "weatherApp": `Ogled vremena v US mestih`,
     }
 }

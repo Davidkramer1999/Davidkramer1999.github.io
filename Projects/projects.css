@@ -1,0 +1,156 @@
+body {
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+    scroll-behavior: initial;
+    overflow: hidden;
+}
+
+
+
+section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3rem;
+    margin: auto;
+    max-width: 60%;
+    padding: 0rem;
+}
+
+.card {
+    background: grey;
+    height: 15rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    grid-column: span 3;
+    font-size: 1.2rem;
+    padding: 2rem;
+    box-shadow: 0.7rem 0.7rem 0rem grey;
+    border: 4px solid grey;
+    gap: 2rem;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black
+}
+
+.container {
+    margin: auto;
+    max-width: 100%;
+}
+
+section {
+    width: 100%;
+    padding: 50px 0;
+}
+
+#vertical {
+    height: 200vh;
+    width: 100%;
+    padding-top: 0rem;
+    margin-left: 70rem;
+}
+
+.vertical__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.vertical__content .col_left {
+    height: 100%;
+    margin-right: 10rem;
+}
+
+.vertical__content .col.col_right {
+    width: 40%;
+}
+
+.vertical__item:not(:last-child) {
+    margin-bottom: 240px;
+}
+
+#horizontal {
+    padding: 50px 0;
+}
+
+.horizontal__content {
+    display: flex;
+}
+
+.horizontal__item {
+    box-shadow: 0.7rem 0.7rem 0rem grey;
+    border: 4px solid grey;
+    padding: 150px 100px;
+    width: 100%;
+    max-width: fit-content;
+
+}
+
+.horizontal__item:not(:last-child) {
+    margin-right: 50px;
+    width: 100%;
+}
+
+.horizontal__num {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    font-stretch: condensed;
+    color: black;
+}
+
+.img{
+    padding: 0px;
+    height: auto;
+}
+
+p:before{
+   content: attr(coming-soon); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #252525;
+    overflow: hidden;
+    animation: animate 10s linear infinite
+}
+@keyframes animate {
+    0%
+    {
+        width: 0;
+    }
+    100%
+    {
+        width: 100%;
+    }
+}
+
+.calculatorImg{
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 220px;
+}
+
+.weatherImg{
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 220px;
+}
